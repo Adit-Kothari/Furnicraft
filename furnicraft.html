@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FurniCraft | Premium Furniture</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="container">
+    <h1>FurniCraft <span style="color:#e67e22">Store</span></h1>
+    <div style="margin-top: 10px;">
+      <button onclick="switchLanguage('en')">English</button>
+      <button onclick="switchLanguage('hi')">हिन्दी</button>
+      <span id="cart-count">0</span> 🛒
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Welcome to our premium furniture store!</h2>
+      <button onclick="addToCart()">Add to Cart</button>
+    </section>
+
+    <hr />
+
+    <section class="product-section">
+      <div class="product-category">
+        <h3>Living Room</h3>
+        <div class="product">Modern Sofa</div>
+        <div class="product">Recliner Chair</div>
+      </div>
+
+      <div class="product-category">
+        <h3>Bedroom</h3>
+        <div class="product">King Size Bed</div>
+        <div class="product">Wardrobe</div>
+      </div>
+
+      <div class="product-category">
+        <h3>Office</h3>
+        <div class="product">Work Desk</div>
+        <div class="product">Ergonomic Chair</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Contact Us</h2>
+      <form method="POST" action="contact.php">
+        <label>Name: <input type="text" name="name" required /></label><br><br>
+        <label>Email: <input type="email" name="email" required /></label><br><br>
+        <label>Message: <textarea name="message" required></textarea></label><br><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
